@@ -1,0 +1,138 @@
+@charset "utf-8";
+/*---hover ʱ��ͷ----*/
+.pub-enter{
+	overflow:hidden;
+	position: relative;
+}
+.pub-20{
+	transition:.3s;
+}	
+.pub-80{
+	position: absolute;
+	top:15px;
+	left:200px;
+	width: 30px;
+	height: 18px;
+	background: url('../images/slogan_jian_tou.png') no-repeat;
+	transition:.3s;
+}
+.pub-black{
+	background: url('../images/n_icon.png') no-repeat -75px -162px;
+}
+.pub-enter:hover .pub-20{
+	margin-left:-20px;
+}
+.pub-enter:hover .pub-80{
+	margin-left:-80px;
+}
+
+
+
+
+.pub-desc{
+	overflow:hidden;
+	position: absolute;
+	top:80px;
+	left:0;
+	width: 0px;
+	height: 0px;
+	padding:10px 0;
+	background-color: #fff;
+	z-index:10;
+	transition:.5s;
+}
+.pub-desc > img{
+	float: left;
+	width: 90px;
+}
+.pub-desc .pub-write{
+	float: left;
+	width: 290px;
+	margin-left:15px;
+	color:#000;
+}
+.pub-desc .pub-write p > em{
+	color:#000;
+	font-size: 18px;
+	font-weight: bold;
+	vertical-align:bottom;
+}
+.pub-desc .pub-write p + p{
+	margin-top:10px;
+}
+.designer li:hover .pub-desc{
+	width: 400px;
+	height: 90px;
+}
+
+.r-list li{
+	position: relative;
+	overflow: hidden;
+}
+.r-list li + li > img{	
+	transition:.3s;
+}
+.r-list li + li:hover > img{
+	margin-left:15px;
+}
+.m-a-container .r-list li + li > em{
+	position: absolute;
+	top:40px;
+	right:-15px;
+	width: 11px;
+	height: 20px;
+	background: url('../images/n_icon.png') no-repeat -187px -161px;
+	transition:.3s;
+}
+.m-a-container .r-list li + li:hover > em{
+	right:20px;
+}
+.r-list li + li:hover > i{
+	background-position: 0 0;
+}
+.r-list li + li:hover{	
+	width: 100%;	
+	background-color: #fff;
+	
+
+}
+
+
+.news-1 .pub-pic .pub-img{
+	position: relative;
+	cursor:pointer;
+}
+.news-1 .pub-pic .pub-img > .title{
+	position: absolute;
+	left:20px;
+	bottom:20px;
+	width: 270px;
+	height: 60px;
+	text-align:center;
+	line-height: 60px;
+	background-color: rgba(194,160,81,.8);
+	color:#fff;
+	font-size: 14px;
+}
+.news-1 .pub-pic .pub-img > .desc{
+	overflow:hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 170px;
+	height: 128px;
+	margin:auto;
+	padding:40px 70px;
+	color:#fff;
+	transform:scale(0,0);
+	transition:.2s;
+	z-index:10;
+	font-size: 12px;
+}
+.news-1 .pub-pic .pub-img:hover > .desc{
+	transform:scale(1,1);
+	background-color: rgba(194,160,81,.9);
+}
+.news-1 .pub-pic .pub-img:hover > .title{
+	display: none;
+}
